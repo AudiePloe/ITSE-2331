@@ -1,0 +1,6 @@
+echo "# ITSE-2331" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/AudiePloe/ITSE-2331.git
+git push -u origin master
