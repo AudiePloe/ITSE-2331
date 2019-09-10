@@ -13,11 +13,14 @@ using namespace std;
 void CW() {
 	ofstream CWaudie;
 
-	if (CreateDirectory("A:\cameronProgram", NULL)) {
+	if (CreateDirectory("A:\cameronProgram\Terms", NULL)) {
+		// Directory Created
+	}
+	if (CreateDirectory("A:\cameronProgram\Jobs", NULL)) {
 		// Directory Created
 	}
 
-	CWaudie.open("A:\\CameronProgram\\CopyRight.txt");
+	CWaudie.open("A:\\CameronProgram\\Terms\\CopyRight.txt");
 	CWaudie.flush();
 	CWaudie << "All rights reserved to Audie Ploe. Created as of 09/09/2019" << endl;
 	CWaudie.close();
