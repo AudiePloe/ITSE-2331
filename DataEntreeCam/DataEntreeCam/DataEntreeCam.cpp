@@ -58,19 +58,19 @@ void NewEntree(string job)
 
 	cout << "This part works" << endl << endl;
 
-	/*cout << endl << endl << "Would you like to make a data entry to this job? (Y)es, (N)o" << endl;
-	cin >> Answer;
-	toupper(Answer);
-	cout << endl;*/
-
 	// Make choice, and make sure good data entree
 	//NewJob.seekp.end;
 
-	NewJob.open("A:\\CameronProgram\\" + job + ".txt");
+	NewJob.open("A:\\CameronProgram\\Jobs\\" + job + ".txt");
 	NewJob << "Name Of Client: " << Name << endl;
 	NewJob << "Address Of Job: " << address << endl;
 	NewJob << "Phone Number Of Client: " << Phone << endl << endl;
 	NewJob.close();
+	
+	/*cout << endl << endl << "Would you like to make a data entry to this job? (Y)es, (N)o" << endl;
+	cin >> Answer;
+	toupper(Answer);
+	cout << endl;*/
 }
 
 void EnterData(string job)
@@ -81,12 +81,15 @@ void EnterData(string job)
 int main()
 {
 	string Job = "";
-
+	string Choice = "";
 	CW();
 
-	cout << "Please enter the new job Name: ";
-	cin >> Job;
-	NewEntree(Job);
+	//cout << "Would you like to
+	
+	
+	//cout << "Please enter the new job Name: ";
+	//cin >> Job;
+	//NewEntree(Job);
 
 
 }
